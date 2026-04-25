@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="mt-24 border-t">
+    <footer className=" border-t">
       <div className="text-center">
         <h4 className="font-semibold">Fitness</h4>
 
