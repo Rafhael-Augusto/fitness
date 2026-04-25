@@ -28,8 +28,10 @@ const cards = [
 
 export function Cards() {
   return (
-    <section>
-      <h3 className="text-center text-2xl my-4">Tudo o que você precisa.</h3>
+    <section className="mb-8">
+      <h3 className="text-center text-2xl my-4">
+        Temos tudo que você precisa.
+      </h3>
 
       <div className="grid grid-cols-1 gap-8 px-16">
         {cards.map((card, index) => (
