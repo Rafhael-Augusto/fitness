@@ -2,9 +2,9 @@ import { Button } from "../ui/button";
 
 export function Hero() {
   return (
-    <section className="h-screen pt-24">
+    <section className="pt-32 mb-64">
       <div>
-        <h1 className="text-center text-3xl ">
+        <h1 className="text-center text-3xl">
           Uma forma mais fácil de acompanhar seus treinos
         </h1>
 
