@@ -44,7 +44,7 @@ export function HowItWorks() {
       </div>
 
       <div className="flex justify-center mb-16 mt-16">
-        <Button size={"lg"}>
+        <Button size={"lg"} asChild>
           <Link href={"/auth/sign-in"}>Organize seus treinos hoje</Link>
         </Button>
       </div>
