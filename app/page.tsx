@@ -1,3 +1,4 @@
+import { Cards } from "@/components/cards";
 import { Hero } from "@/components/hero";
 import { Problem } from "@/components/problem";
 
@@ -7,6 +8,8 @@ export default function Home() {
       <Hero />
 
       <Problem />
+
+      <Cards />
     </>
   );
 }
