@@ -14,13 +14,13 @@ export function StepItemCard({ data }: Props) {
   return (
     <Card>
       <CardHeader className="text-center">
-        <CardTitle>{data.title}</CardTitle>
+        <CardTitle className="md:text-lg">{data.title}</CardTitle>
       </CardHeader>
 
       <CardContent>
         <Image alt={data.title} src={data.imgUrl} height={500} width={500} />
 
-        <p>{data.description}</p>
+        <p className="md:text-base">{data.description}</p>
       </CardContent>
     </Card>
   );

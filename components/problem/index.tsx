@@ -1,11 +1,11 @@
 export function Problem() {
   return (
-    <section>
-      <h2 className="text-center text-2xl">
+    <section className="mb-16 md:mb-32">
+      <h2 className="text-center text-2xl md:text-3xl lg:text-4xl">
         Se sente desorganizado na hora do treino?
       </h2>
 
-      <ul className="flex flex-col gap-2 text-muted-foreground mt-4 mb-16 text-sm px-2 list-disc pl-8">
+      <ul className="flex flex-col md:items-center gap-2 text-muted-foreground mt-4 text-sm md:text-base lg:text-lg px-2 list-disc pl-8">
         <li>
           Treinar sem organização faz você{" "}
           <span className="underline">perder consistência</span> .

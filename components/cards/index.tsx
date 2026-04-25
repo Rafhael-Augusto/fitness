@@ -28,8 +28,8 @@ const cards = [
 
 export function Cards() {
   return (
-    <section className="mb-8">
-      <h3 className="text-center text-2xl my-4">
+    <section className="mb-8 md:mb-32">
+      <h3 className="text-center text-2xl md:text-3xl lg:text-4xl my-4">
         Temos tudo que você precisa.
       </h3>
 

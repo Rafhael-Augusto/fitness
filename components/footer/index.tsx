@@ -4,7 +4,7 @@ export function Footer() {
       <div className="text-center">
         <h4 className="font-semibold">Fitness</h4>
 
-        <ul className="flex items-center justify-center gap-8 text-sm text-muted-foreground underline">
+        <ul className="flex items-center justify-center gap-8 text-sm md:text-base lg:text-lg text-muted-foreground underline">
           <li>
             <a
               target="_blank"
@@ -20,7 +20,7 @@ export function Footer() {
           </li>
         </ul>
 
-        <p className="text-xs text-muted-foreground">
+        <p className="text-xs md:text-sm text-muted-foreground">
           © 2026 Fitness. Todos os direitos reservados.
         </p>
       </div>

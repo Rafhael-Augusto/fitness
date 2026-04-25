@@ -31,11 +31,11 @@ const steps = [
 export function HowItWorks() {
   return (
     <section>
-      <h2 className="text-center text-2xl my-4">
+      <h2 className="text-center text-2xl md:text-3xl lg:text-4xl my-4">
         Como começar seu primeiro treino
       </h2>
 
-      <div className="grid grid-cols-1 gap-8 px-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-16">
         {steps.map((step, index) => (
           <StepItemCard data={step} key={index} />
         ))}
