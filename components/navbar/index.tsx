@@ -6,12 +6,12 @@ import Link from "next/link";
 export function Navbar() {
   return (
     <nav className="flex items-center justify-between p-4">
-      <Link href={"/"}>
-        <div className="flex items-center gap-2">
+      <button className="flex items-center gap-2">
+        <Link href={"/"}>
           <DumbbellIcon size={"25"} />
           <span className="text-xl font-bold hidden md:inline">Fitness</span>
-        </div>
-      </Link>
+        </Link>
+      </button>
 
       <div>
         <Button>Comece Agora</Button>
