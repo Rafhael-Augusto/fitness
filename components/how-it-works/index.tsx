@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
 
 import { StepItemCard } from "@/components/step-item-card";
@@ -42,7 +44,9 @@ export function HowItWorks() {
       </div>
 
       <div className="flex justify-center mb-16 mt-16">
-        <Button size={"lg"}>Organize seus treinos hoje</Button>
+        <Button size={"lg"}>
+          <Link href={"/auth/sign-in"}>Organize seus treinos hoje</Link>
+        </Button>
       </div>
     </section>
   );

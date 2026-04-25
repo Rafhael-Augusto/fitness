@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
@@ -18,7 +20,9 @@ export function Hero() {
         </p>
 
         <div className="flex justify-center mt-8">
-          <Button size={"lg"}>Começar agora</Button>
+          <Button size={"lg"} asChild>
+            <Link href={"/auth/sign-in"}>Começar agora</Link>
+          </Button>
         </div>
 
         <p className="text-center text-xs md:text-sm lg:text-base text-muted-foreground mt-4">

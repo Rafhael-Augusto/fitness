@@ -17,7 +17,9 @@ export function Navbar() {
       </Link>
 
       <div>
-        <Button>Comece Agora</Button>
+        <Button asChild>
+          <Link href={"/auth/sign-in"}>Comece Agora</Link>
+        </Button>
       </div>
     </nav>
   );
