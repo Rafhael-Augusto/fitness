@@ -32,7 +32,7 @@ export function HowItWorks() {
   return (
     <section>
       <h2 className="text-center text-2xl my-4">
-        Como comecar seu primeiro treino
+        Como começar seu primeiro treino
       </h2>
 
       <div className="grid grid-cols-1 gap-8 px-16">
@@ -41,7 +41,9 @@ export function HowItWorks() {
         ))}
       </div>
 
-      <Button>Organize seus treinos hoje</Button>
+      <div className="flex justify-center mb-16 mt-16">
+        <Button size={"lg"}>Organize seus treinos hoje</Button>
+      </div>
     </section>
   );
 }
