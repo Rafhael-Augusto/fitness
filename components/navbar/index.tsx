@@ -1,7 +1,8 @@
+import Link from "next/link";
+
 import { DumbbellIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export function Navbar() {
   return (
