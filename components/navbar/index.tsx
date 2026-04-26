@@ -6,20 +6,22 @@ import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   return (
-    <nav className="flex items-center justify-between p-4">
-      <Link
-        href={"/"}
-        className="flex items-center gap-2"
-        aria-label="Home page button"
-      >
-        <DumbbellIcon size={"25"} />
-        <span className="text-xl font-bold hidden md:inline">Fitness</span>
-      </Link>
+    <nav className="fixed backdrop-blur-xs bg-secondary/50 m-2 rounded-xl">
+      <div className="flex items-center justify-between p-4 w-screen relative">
+        <Link
+          href={"/"}
+          className="flex items-center gap-2"
+          aria-label="Home page button"
+        >
+          <DumbbellIcon size={"25"} />
+          <span className="text-xl font-bold hidden md:inline">Fitness</span>
+        </Link>
 
-      <div>
-        <Button asChild>
-          <Link href={"/auth/sign-in"}>Comece Agora</Link>
-        </Button>
+        <div>
+          <Button asChild>
+            <Link href={"/auth/sign-in"}>Comece Agora</Link>
+          </Button>
+        </div>
       </div>
     </nav>
   );
