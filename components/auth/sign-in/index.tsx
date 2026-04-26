@@ -1,6 +1,12 @@
 "use client";
 
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+
+import { formSchema, FormData } from "@/components/auth/sign-in/schema";
+
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import {
   Field,
   FieldDescription,
@@ -9,13 +15,11 @@ import {
   FieldLabel,
   FieldSet,
 } from "@/components/ui/field";
-import { Input } from "@/components/ui/input";
-import { useForm } from "react-hook-form";
-import { formSchema, FormData } from "./schema";
-import { zodResolver } from "@hookform/resolvers/zod";
 
 export function SignInForm() {
-  async function onSubmit(data: FormData) {}
+  async function onSubmit(data: FormData) {
+    console.log(data);
+  }
 
   const {
     register,
@@ -47,7 +51,7 @@ export function SignInForm() {
               {...register("password")}
               id="password"
               autoComplete="off"
-              placeholder="••••••"
+              placeholder="••••••••"
               type="password"
             />
             <FieldDescription>
