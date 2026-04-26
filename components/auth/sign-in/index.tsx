@@ -68,7 +68,7 @@ export function SignInForm() {
           </Field>
 
           {/* SIGN UP */}
-          <div className="text-end text-xs">
+          <div className="text-end text-xs md:text-sm">
             <span>Nao possui uma conta?</span>{" "}
             <Link href={"/auth/sign-up"} className="underline text-cyan-600">
               Criar agora.

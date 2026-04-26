@@ -4,8 +4,8 @@ import { SignInForm } from "@/components/auth/sign-in";
 
 export default function SignInPage() {
   return (
-    <section className="items-center px-4 mt-24 h-screen">
-      <Card className="">
+    <section className="px-4 mt-24 h-screen md:flex flex-col items-center">
+      <Card className="md:w-md lg:w-lg h-auto ">
         <CardHeader>
           <CardTitle>Fazer login</CardTitle>
         </CardHeader>

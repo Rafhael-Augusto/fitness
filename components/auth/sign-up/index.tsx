@@ -83,7 +83,7 @@ export function SignUpForm() {
           </Field>
 
           {/* SIGN IN */}
-          <div className="text-end text-xs">
+          <div className="text-end text-xs md:text-sm">
             <span>Ja possui uma conta?</span>{" "}
             <Link href={"/auth/sign-in"} className="underline text-cyan-600">
               Fazer login.
