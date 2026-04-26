@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
@@ -79,6 +81,14 @@ export function SignUpForm() {
               <FieldError>{errors.confirmPassword.message}</FieldError>
             )}
           </Field>
+
+          {/* SIGN IN */}
+          <div className="text-end text-xs">
+            <span>Ja possui uma conta?</span>{" "}
+            <Link href={"/auth/sign-in"} className="underline text-cyan-600">
+              Fazer login.
+            </Link>
+          </div>
 
           {/* SUBMIT BUTTON */}
           <Field orientation={"vertical"}>
