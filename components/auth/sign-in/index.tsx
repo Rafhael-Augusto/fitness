@@ -33,6 +33,7 @@ export function SignInForm() {
     <form onSubmit={handleSubmit(onSubmit)}>
       <FieldSet>
         <FieldGroup>
+          {/* EMAIL */}
           <Field>
             <FieldLabel htmlFor="gmail">Seu email</FieldLabel>
             <Input
@@ -45,6 +46,8 @@ export function SignInForm() {
             <FieldDescription>Seu email.</FieldDescription>
             {errors.email && <FieldError>{errors.email.message}</FieldError>}
           </Field>
+
+          {/* PASSWORD */}
           <Field>
             <FieldLabel htmlFor="password">Sua senha</FieldLabel>
             <Input
@@ -61,6 +64,8 @@ export function SignInForm() {
               <FieldError>{errors.password.message}</FieldError>
             )}
           </Field>
+
+          {/* SUBMIT BUTTON */}
           <Field orientation={"vertical"}>
             <Button>Fazer login</Button>
           </Field>
