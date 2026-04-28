@@ -1,4 +1,6 @@
+import { NotepadSheet } from "@/components/notepad-sheet";
 import { SessionButton } from "@/components/session-button";
+import { Stopwatch } from "@/components/stopwatch";
 import { YoutubePlayer } from "@/components/youtube-player";
 
 export default function StartSessionPage() {
@@ -7,6 +9,10 @@ export default function StartSessionPage() {
       <YoutubePlayer />
 
       <SessionButton />
+
+      <NotepadSheet />
+
+      <Stopwatch />
     </>
   );
 }
