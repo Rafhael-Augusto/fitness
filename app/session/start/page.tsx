@@ -1,7 +1,8 @@
-import { NotepadSheet } from "@/components/notepad-sheet";
-import { SessionButton } from "@/components/session-button";
-import { Stopwatch } from "@/components/stopwatch";
-import { YoutubePlayer } from "@/components/youtube-player";
+import { GoalSelected } from "@/components/start-session/goal-selected";
+import { NotepadSheet } from "@/components/start-session/notepad-sheet";
+import { SessionButton } from "@/components/start-session/session-button";
+import { Stopwatch } from "@/components/start-session/stopwatch";
+import { YoutubePlayer } from "@/components/start-session/youtube-player";
 
 export default function StartSessionPage() {
   return (
@@ -11,6 +12,8 @@ export default function StartSessionPage() {
       <SessionButton />
 
       <NotepadSheet />
+
+      <GoalSelected />
 
       <Stopwatch />
     </>
