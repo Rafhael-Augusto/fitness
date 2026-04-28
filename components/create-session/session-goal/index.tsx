@@ -48,16 +48,15 @@ export function SessionGoal({ data }: Props) {
             >
               {data.map((item) => (
                 <div key={item.id}>
-                  <div className="flex items-center justify-between gap-3 ml-8">
+                  <div className="flex items-center justify-between mx-8">
                     <div className="flex items-center gap-3">
                       <RadioGroupItem value={item.id} id={item.id} />
                       <Label htmlFor={item.id}>{item.title}</Label>
                     </div>
 
-                    <Button asChild variant={"secondary"}>
+                    <Button asChild variant={"secondary"} size={"icon"}>
                       <Link href={`/session/${item.id}`}>
-                        {" "}
-                        <ExternalLinkIcon />{" "}
+                        <ExternalLinkIcon />
                       </Link>
                     </Button>
                   </div>
@@ -69,57 +68,9 @@ export function SessionGoal({ data }: Props) {
               <div>
                 <div className="flex items-center gap-3 ml-8">
                   <RadioGroupItem value={"new-goal"} id={"new-goal"} />
-                  <Label htmlFor={"new-goal"}>Nova meta</Label>
+                  <Label htmlFor={"new-goal"}>Sem meta</Label> -
+                  <p className="text-xs">Sessao sem meta.</p>
                 </div>
-
-                {selectedRadioId === "new-goal" && (
-                  <FieldSet className="px-2 mt-8 border m-2 rounded-xl p-2">
-                    <FieldGroup>
-                      <Field>
-                        <div className="flex items-center justify-between">
-                          <FieldLabel htmlFor="goal-name">
-                            Nome da meta
-                          </FieldLabel>
-                          <Button size={"xs"} variant={"destructive"}>
-                            remover
-                          </Button>
-                        </div>
-                        <Input
-                          id="goal-name"
-                          autoComplete="off"
-                          placeholder="Nome da meta"
-                          defaultValue={`Meta #${data.length}`}
-                        />
-                      </Field>
-                      <Field>
-                        <div className="flex items-center justify-between">
-                          <FieldLabel htmlFor="stopwatch">
-                            Cronômetro (em minutos)
-                          </FieldLabel>
-                          <Button size={"xs"} variant={"destructive"}>
-                            Remover
-                          </Button>
-                        </div>
-                        <Input
-                          id="stopwatch"
-                          autoComplete="off"
-                          placeholder="Tempo da meta"
-                          defaultValue={"15"}
-                        />
-                      </Field>
-
-                      <Field orientation={"horizontal"}>
-                        <Button variant={"secondary"} type="button">
-                          +
-                        </Button>
-                      </Field>
-
-                      <Field orientation={"horizontal"}>
-                        <Button className="mt-4">Criar nova meta</Button>
-                      </Field>
-                    </FieldGroup>
-                  </FieldSet>
-                )}
               </div>
             </RadioGroup>
           </AccordionContent>

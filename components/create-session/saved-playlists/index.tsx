@@ -11,6 +11,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { ExternalLinkIcon } from "lucide-react";
+import Link from "next/link";
 
 type Props = {
   data: {
@@ -36,10 +39,20 @@ export function SavedPlaylists({ data }: Props) {
               defaultValue="no-playlist"
             >
               {data.map((item) => (
-                <div key={item.id} className="flex items-center gap-3 ml-8">
-                  <RadioGroupItem value={item.label} id={item.label} />
-                  <Label htmlFor={item.label}>{item.label}</Label> -
-                  <p className="text-xs">{item.totalVideos} videos.</p>
+                <div
+                  key={item.id}
+                  className="flex items-center justify-between mx-8"
+                >
+                  <div className="flex items-center gap-3">
+                    <RadioGroupItem value={item.label} id={item.label} />
+                    <Label htmlFor={item.label}>{item.label}</Label> -
+                    <p className="text-xs">{item.totalVideos} videos.</p>
+                  </div>
+                  <Button asChild variant={"secondary"} size={"icon"}>
+                    <Link href={`/session/${item.id}`}>
+                      <ExternalLinkIcon />
+                    </Link>
+                  </Button>
                 </div>
               ))}
 
