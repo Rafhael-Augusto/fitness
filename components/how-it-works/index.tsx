@@ -9,24 +9,24 @@ const steps = [
     title: "Crie sua conta",
     description:
       "Comece criando sua conta. É grátis e não precisa de verificação.",
-    imgUrl: "/next.svg",
+    imgUrl: "/placeholder.webp",
   },
   {
     title: "Configure sua sessão",
     description:
       "Adicione links de vídeos, faça anotações e prepare tudo antes de começar.",
-    imgUrl: "/next.svg",
+    imgUrl: "/placeholder.webp",
   },
   {
     title: "Defina uma meta",
     description: "Se quiser, defina um objetivo simples para sua sessão atual.",
-    imgUrl: "/next.svg",
+    imgUrl: "/placeholder.webp",
   },
   {
     title: "Inicie seu treino",
     description:
       "Quando estiver tudo pronto, clique em iniciar sessão e comece seu treino.",
-    imgUrl: "/next.svg",
+    imgUrl: "/placeholder.webp",
   },
 ];
 

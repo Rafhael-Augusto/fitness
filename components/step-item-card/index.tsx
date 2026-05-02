@@ -17,7 +17,7 @@ export function StepItemCard({ data }: Props) {
         <CardTitle className="md:text-lg">{data.title}</CardTitle>
       </CardHeader>
 
-      <CardContent>
+      <CardContent className="flex flex-col items-center gap-4">
         <Image alt={data.title} src={data.imgUrl} height={500} width={500} />
 
         <p className="md:text-base">{data.description}</p>
