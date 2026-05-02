@@ -16,7 +16,7 @@ export function YoutubePlayer() {
   };
   return (
     <>
-      <div className="h-[40vh] bg-red-800">
+      <div className="relative h-[40vh] bg-red-800">
         <YouTube
           videoId="ywZlrdtO_dM"
           opts={opts}
