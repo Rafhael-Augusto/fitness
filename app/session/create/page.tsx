@@ -1,10 +1,12 @@
 import Link from "next/link";
 
-import { SavedPlaylists } from "@/components/create-session/saved-playlists";
-import { EnableStopwatch } from "@/components/create-session/stopwatch";
-import { SessionGoal } from "@/components/create-session/session-goal";
-import { Notepad } from "@/components/create-session/notepad";
-import { CreateSession } from "@/components/create-session";
+import {
+  CreateSession,
+  EnableStopwatch,
+  Notepad,
+  SavedPlaylists,
+  SessionGoal,
+} from "@/features/session/create";
 
 const playlists = [
   {

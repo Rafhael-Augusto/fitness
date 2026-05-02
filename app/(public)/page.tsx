@@ -1,7 +1,4 @@
-import { HowItWorks } from "@/components/how-it-works";
-import { Problem } from "@/components/problem";
-import { Cards } from "@/components/cards";
-import { Hero } from "@/components/hero";
+import { HowItWorks, Problem, Cards, Hero } from "@/features/landing";
 
 export default function Home() {
   return (

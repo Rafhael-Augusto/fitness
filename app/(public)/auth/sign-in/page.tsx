@@ -1,6 +1,11 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/shared/components/card";
 
-import { SignInForm } from "@/components/auth/sign-in";
+import { SignInForm } from "@/features/auth";
 
 export default function SignInPage() {
   return (
