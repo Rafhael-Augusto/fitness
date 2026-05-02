@@ -1,28 +1,17 @@
 "use client";
 
-import YouTube, { YouTubeProps } from "react-youtube";
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
+
+import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
 export function YoutubePlayer() {
-  const onPlayerReady: YouTubeProps["onReady"] = (event) => {
-    event.target.pauseVideo();
-  };
-
-  const opts: YouTubeProps["opts"] = {
-    height: "100%",
-    width: "100%",
-    playerVars: {
-      autoplay: 1,
-    },
-  };
   return (
     <>
-      <div className="relative h-[40vh] bg-red-800">
-        <YouTube
-          videoId="ywZlrdtO_dM"
-          opts={opts}
-          onReady={onPlayerReady}
-          className="h-full"
-          key="player"
+      <div className="relative h-[60vh]">
+        <LiteYouTubeEmbed
+          style={{ height: "100%", width: "100%" }}
+          id="opPfvUzfgos"
+          title="video number 1"
         />
       </div>
     </>
