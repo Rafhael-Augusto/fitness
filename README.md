@@ -1,10 +1,10 @@
-### Fitness Session Tracker (Frontend)
+## Fitness Session Tracker (Frontend)
 
 Frontend application for managing guided workout sessions, allowing users to create structured training flows using goals and YouTube playlists.
 
 The project focuses on providing a distraction-free environment where users can follow video-based workouts while tracking notes and session progress.
 
-## ⚠️ This repository contains only the frontend. The backend is currently under development.
+### ⚠️ This repository contains only the frontend. The backend is currently under development.
 
 ## Features
 * User authentication (register & login flow)
