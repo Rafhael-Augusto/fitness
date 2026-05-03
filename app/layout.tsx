@@ -4,8 +4,6 @@ import { cn } from "@/shared/lib/utils";
 
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 
-import { Menu } from "@/shared/layout";
-
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -43,7 +41,6 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-full flex flex-col">
-        <Menu />
         <main className="flex-1">{children}</main>
       </body>
     </html>
