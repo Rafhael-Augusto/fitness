@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { EllipsisVerticalIcon, TrashIcon } from "lucide-react";
+import { EllipsisVerticalIcon, PencilIcon, TrashIcon } from "lucide-react";
 
 import { Video } from "@/features/playlist/types/playlist.types";
 
@@ -47,6 +47,10 @@ export function PlaylistVideo({ data }: Props) {
 
         <DropdownMenuContent>
           <DropdownMenuGroup>
+            <DropdownMenuItem className="text-xs">
+              <PencilIcon size={"10"} />
+              <span>Editar titulo</span>
+            </DropdownMenuItem>
             <DropdownMenuItem className="text-xs">
               <TrashIcon size={"10"} />
               <span>Remover video</span>
