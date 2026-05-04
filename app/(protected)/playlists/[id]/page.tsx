@@ -7,8 +7,6 @@ type Props = {
 export default async function PlaylistInfoPage({ params }: Props) {
   const id = await params;
 
-  console.log(id);
-
   return (
     <div>
       <PlaylistInfo />
