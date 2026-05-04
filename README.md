@@ -33,7 +33,7 @@ The project focuses on providing a distraction-free environment where users can 
 * React Hook Form
 * Zod
 * Lucide React (icons)
-* React YouTube
+* React Lite YouTube Embed
   
 ## Installation
 Clone the repository
