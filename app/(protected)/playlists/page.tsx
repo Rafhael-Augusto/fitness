@@ -1,4 +1,4 @@
-import { PlaylistList } from "@/features/playlist/components/playlist-list";
+import { PlaylistList } from "@/features/playlist";
 
 export default function Playlist() {
   return (

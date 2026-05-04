@@ -4,7 +4,7 @@ type BaseEntity = {
   updatedAt: string;
 };
 
-type Video = BaseEntity & {
+export type Video = BaseEntity & {
   title: string;
   videoId: string;
   order: number;
@@ -12,6 +12,7 @@ type Video = BaseEntity & {
 
 export type Playlist = BaseEntity & {
   title: string;
+  description: string;
 
   videos: Video[];
 };
