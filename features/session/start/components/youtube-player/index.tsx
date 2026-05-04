@@ -10,7 +10,7 @@ export function YoutubePlayer() {
       <div className="relative h-[60vh]">
         <LiteYouTubeEmbed
           style={{ height: "100%", width: "100%" }}
-          id="opPfvUzfgos"
+          id="dQw4w9WgXcQ"
           title="video number 1"
         />
       </div>
