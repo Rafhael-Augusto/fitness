@@ -1,7 +1,9 @@
+import { GoalsList } from "@/features/goals";
+
 export default function Goals() {
   return (
     <div>
-      <h1>goals</h1>
+      <GoalsList />
     </div>
   );
 }
